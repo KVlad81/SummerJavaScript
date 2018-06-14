@@ -27,7 +27,7 @@ function isSimple(a) {
         return; 
     }
     for (let i = 3; i <= Math.sqrt(a); i++) {
-        if (a % i == 0) {
+        if (a % i === 0) {
             console.log(false);
             return;
         }
