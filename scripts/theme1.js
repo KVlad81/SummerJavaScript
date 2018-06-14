@@ -1,4 +1,4 @@
-function findRutes(a, b, c) {
+function findRoots(a, b, c) {
     let D = b * b - 4 * a * c;
     if (D < 0) {
         console.log('No rutes');
@@ -10,15 +10,23 @@ function findRutes(a, b, c) {
     let x2 = -b - Math.sqrt(D);
     x2 /= 2 * a;
 
-    console.log(`Rutes are:  ${x1} and  ${x2}`)
+    console.log(`Roots are:  ${x1} and  ${x2}`)
 }
 
 function isSimple(a) {
-    if (a <= 1) { console.log(false); return; }
-    if (a === 2) { console.log(true); return; }
-    if (a % 2 === 0) { console.log(false); return; }
-
-    for (let i = 3; i < Math.sqrt(a); i++) {
+    if (a <= 1) { 
+        console.log(false); 
+        return; 
+    }
+    if (a === 2) { 
+        console.log(true); 
+        return; 
+    }
+    if (a % 2 === 0) { 
+        console.log(false); 
+        return; 
+    }
+    for (let i = 3; i <= Math.sqrt(a); i++) {
         if (a % i == 0) {
             console.log(false);
             return;

@@ -1,9 +1,9 @@
 console.log(`THEME #1`);
 
 console.log(`Task  #1\n\n`);
-findRutes(1, 4, 4);
-findRutes(4, 4, 1);
-findRutes(4, 1, 4);
+findRoots(1, 4, 4);
+findRoots(4, 4, 1);
+findRoots(4, 1, 4);
 
 console.log("\n\nTask #2");
 isSimple(1);
@@ -25,7 +25,7 @@ reverseNumber(54321);
 console.log(`\n\n\n\nTHEME #2`);
 
 console.log(`Task  #1\n\n`);
-devideArray([-3, -1, 0, 1, 3]);
+divideArray([-3, -1, 0, 1, 3]);
 
 console.log(`Task  #2\n\n`);
 calculateRepeats([-3, -1, -3, 0, 1, 0, 3]);

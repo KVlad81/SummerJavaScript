@@ -1,4 +1,4 @@
-function devideArray(array) {
+function divideArray(array) {
     let B = [];
     let C = [];
     array.forEach(element => {
